@@ -28,7 +28,7 @@ function selectionSort(array) {
   }
   return array;
 }
-console.log(selectionSort(randomArray(1000)));
+document.write("Selection Sort " + selectionSort(randomArray(1000)));
 
 function interChangeSort(array) {
   for (let i = 0; i < array.length - 1; i++) {
@@ -42,7 +42,7 @@ function interChangeSort(array) {
   }
   return array;
 }
-console.log(interChangeSort(randomArray(1000)));
+document.write("InterChange Sort" + interChangeSort(randomArray(1000)));
 
 function insertionSort(array) {
   let pos, x;
@@ -57,7 +57,7 @@ function insertionSort(array) {
   }
   return array;
 }
-console.log(insertionSort(randomArray(1000)));
+document.write("InterChange Sort" + insertionSort(randomArray(1000)));
 
 function bubbleSort(array) {
   for (let i = 0; i < array.length - 1; i++) {
@@ -71,7 +71,7 @@ function bubbleSort(array) {
   }
   return array;
 }
-console.log(bubbleSort(randomArray(1000)));
+document.write("Bubble Sort" + bubbleSort(randomArray(1000)));
 
 function quickSort(array, left, right) {
   let l = left,
@@ -95,4 +95,4 @@ function quickSort(array, left, right) {
   if (r > left) quickSort(array, left, r);
   return array;
 }
-console.log(quickSort(randomArray(1000)));
+document.write("QuickSort" + quickSort(randomArray(1000)));
